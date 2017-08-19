@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "raleway";
+  src: url("fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "raleway-light";
+  src: url("fonts/Raleway-Light.ttf");
+}
+@font-face{
+  font-family: "raleway-bold"
+  src: url("fonts/Raleway-Bold.ttf")
+}
+
+body{
+  background-color: #3d3d3d;
+}
+
+.navbar {
+  background-color:transparent;
+}
+
+.navbar-show {
+  background-color:#2f3030;
+}
+
+.logo{
+  height: 35px;
+  width: 35px
+}
+
+.navbar-brand{
+  color: white;
+  font-family: raleway;
+  position:relative;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-parent {
+  float:none;
+  display: block;
+}
+
+.nav-items {
+color:white;
+padding: 5px;
+font-family: raleway;
+}
+
+.nav-items:hover {
+text-decoration: none;
+}
+
+.pages {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.top-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left:0;
+  right:0;
+}
+
+.container-two {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  left:0;
+  right:0;
+}
+
+#video-container {
+  position: absolute;
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+  filter: opacity(50%) grayscale();
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	width: 100%;
+}
+
+.overlay {
+    position:absolute;
+    z-index:3000000;
+}
+
+.catchline{
+  z-index:300000;
+  width:60%;
+  position: relative;
+  top:25vh;
+  margin: 0 auto;
+  font:raleway;
+  color:white;
+  font-size:32px;
+  text-align: center;
+}
+
+
+.secondary-text {
+  z-index:300000;
+  width:80%;
+  position: relative;
+  top:35vh;
+  margin: 0 auto;
+  color:white;
+  font-size:24px;
+  text-align: center;
+}
