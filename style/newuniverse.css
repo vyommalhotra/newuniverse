@@ -137,11 +137,12 @@ video.fillWidth {
   background-color: white;
   position: relative;
   margin: auto;
-  width: 95%;
+  width: 85%;
   height: 85vh;
   top:10px;
   left:0;
   right:0;
+  margin-bottom:5vh;
 }
 
 .titles{
@@ -159,12 +160,13 @@ video.fillWidth {
   color: black;
   font-family: libel;
   font-size: 30px;
+  margin-top: 5vh;
 }
 .left-side{
   position: relative;
   float:left;
-  width: 45vw;
-  padding-right: 5vw;
+  width: 42vw;
+  padding-right: 2vw;
 }
 
 .right-side{
@@ -176,12 +178,70 @@ video.fillWidth {
 .upside {
   position: relative;
   width: 100%;
-  height: 35vh;
+  height: auto;
   background:#f9fafc;
 }
 
 .downside {
-  position: relative;
+  margin-top: 2vh;
+  clear:both;
+  position:relative;
   width: 100%;
 
+}
+
+.block {
+  overflow: hidden;
+  display:inline-block;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  float: left;
+  width: 12vw;
+  height: 12vw;
+  background-color: white;
+  cursor: hand;
+}
+
+.box-img {
+    position:relative;
+    top: 5vh;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.cover {
+  text-align: center;
+  color: black;
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  height: 70%;
+  width: 70%;
+  margin-top: 0;
+  margin-left: 6vw;
+  position: inherit;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.rep {
+  color: black;
+  transition: .5s ease;
+  position: relative;
+  height: inherit;
+  width:inherit;
+  margin: inherit;
+  position: inherit;
+}
+
+.block:hover .box-img {
+  opacity: 0.3;
+}
+
+.block:hover .cover {
+  opacity: 1;
 }
