@@ -1,59 +1,92 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
+<head>
+  <meta charset ="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- site icon -->
+  <link rel="shortcut icon" href="style/pics/ipsonicon2.png">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- our css -->
+  <link rel="stylesheet" href="style/newuniverse.css">
+    <link rel="stylesheet" href="style/animation.css">
+  <!-- jquery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <title>New Universe</title>
 
-.bgimg {
-    filter: grayscale(100%);
-    background-image: url('city.jpeg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-}
+</head>
 
-.topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-}
-
-.bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-}
-
-.middle {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-hr {
-    margin: auto;
-    width: 40%;
-}
-</style>
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>New Universe</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-  </div>
-</div>
+  <div class="top-container">
+
+    <!-- div which allows for video overlaying -->
+    <div class="overlay">
+      <!-- navbar bootstrap-->
+      <nav class="navbar fixed-top">
+        <div class="nav-parent">
+          <a class="navbar-brand" href="#">
+            New Universe
+          </a>
+          <span class="pages">
+            <a class="nav-items" href="#anchor">Contact</a>|
+            <a class="nav-items" href="#anchor">About Us</a>|
+            <a class="nav-items" href="#anchor">Products & Services</a>
+          </span>
+        </div>
+      </nav>
+    </div>
+
+    <!--center text in top-container -->
+    <div class="item-1">MAKING BRANDS ACCESIBLE </div>
+    <div class="item-2">BRINGING GLOBAL OPPORTUNITIES WITHIN REACH </div>
+    <div class="item-3">CONNECTING THE WORLD</div>
+
+    <div class="secondary-text">
+    </div>
+
+    <!-- video in background-->
+    <div id="video-container">
+      <video autoplay loop muted class="fillWidth">
+        <source src="style/pics/earth.mp4" type="video/mp4"/>
+    </div>
+
+    <!-- end of top-container -->
+    </div>
+
+    <div class="second-container">
+        <div class="titles"><center> ABOUT US <center></div>
+
+        <div class="left-side">This section will talk about newuniverse as a general trading company while mentioning and expanding on:<br> - New universe helps manufacterers, exporters, and brands reach a global audience
+        <br> - We help expand business to the Americas(North, South, and Central) <br> - Provide exclusive representations for brands <br> -Our mission is to help brands connect to a global audience <br> -Mention newuniverse as a seller and provider of various products(contact lenses,beauty products, bio-engineering products, sugar, coffee, IT products)</div>
+        <div class="right-side"> <img src="style/pics/ship.jpg" style="width:35vw;height:45vh; margin:auto"> </div>
+    </div>
+
+    <div class="second-container" style="background-color:#f7f7f7;">
+      <div class="titles2"><center> Exclusive Representations <center></div>
+      <div class ="upside">A brief description here mentioning: New Universe holds the exclusive rights to market and sales of the following products and services in Americas(North, South, Central) <br> For each brand: on hover: an overlay with a brief sentence about the brand. On Click: opens a new page with more details about the product/service offered</div>
+      <div class="block"> <center> Its My Baby IVF Center </center> <img src="style/pics/ivf.png" class="box-img"> <div class="cover">very brief sentence on what it is</div> </div>
+      <div class="block"> <center> GoldStar buttons </center></div>
+      <div class="block"> <center> KASAYA </center></div>
+      <div class="block"> <center> Iron Systems </center></div>
+      <div class="block"> <center> Relaxo</center></div>
+      <div class="block"> <center> Midas Investments Consulting <br>(micpte.com)</center></div>
+      <div class="downside"> <div class="titles2"><center>Products and Services<center></div> </div>
+      <div class="upside"> A brief description of the various products and services that we offer. talk about general trading. the most important product here is contact lenses, mention in general about the rest. on hover: Brief sentence, on click: new page with brief description(only contacts lense page needs to be detailed)
+      <div class="block"> <center> Contact Lenses </center></div>
+      <div class="block"> <center> Coffee & Sugar </center></div>
+      <div class="block"> <center> Accessories </center></div>
+      <div class="block"> <center> Engineering Items</center></div>
+      </div>
+
+    </div>
+
+
+  <!-- our script -->
+  <script type="text/javascript" src="scripts/newuniverse.js"></script>
+  <!-- Bootstrap js, jquery, tether -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </body>
-</html>
